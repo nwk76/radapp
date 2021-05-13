@@ -1,0 +1,41 @@
+Portal diagnostyczny
+Wersja alfa.
+CPE Rad Check.
+1 wpisz adres konwertera.
+2 wpisz nazwe usługi. - api do Ipmanager moduł CPE find
+Numer usługi  
+Adres dla cpe
+typ łacza
+węzeł sieciowy
+Port
+Dslam
+Router Model
+Opis
+
+Sprawdz - pobierz i wyświetl dane
+
+Procedura logowania na wezeł
+Sprawdz dostępność 
+Ping na adres
+#If ping Ok Next #else "CPE Niedostępne"
+Zaloguj sie na wezeł
+1. Logowanie via radius #if OK Next #else 2 (pawel szczepański)
+2. Logowanie via pass #if OK Next #else 3
+3. Logowanie via def(1234) #if OK Next #else "Nie można sie zalogować na CPE"
+
+Wykonaj komendy
+....
+
+...
+
+Podaj port klienta:
+
+wykonaj komendy
+
+Wyświetl Rezultaty.
+
+
+Do zrobienia w następnym kroku - wyświetl status portu na msa (ew dane z logów)
+
+
+

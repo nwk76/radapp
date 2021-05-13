@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <p class="info_ok">IP address <strong>{{ ip_address }}</strong> is reachable.</p>
+    <p class="info_ok">Login and password verified successfully.</p>
+    <p class="info_ok">Telnet session has been established.</p>
+    <hr>
+
+    <form action="/command" method="POST">
+        <p>Send a command to the device:</p>
+        <input type="text" name="command" placeholder="Enter command">
+        <input class="button"  type="submit" value="Send">
+    </form>
+    <p>Or enter <a href="start">other IP address</a> to connect to.</a></p>
+
+    {% if is_response_ok %}
+        <hr>
+        <div class="response-box">
+            <p class="response">{{ response }}</p>
+        </div>
+    {% endif %}
+{% endblock %}
+
+

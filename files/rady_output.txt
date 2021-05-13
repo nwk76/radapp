@@ -1,0 +1,316 @@
+210_MEH100001345743# show configure system device-information
+Description : LA-210 HW Version: 0.01, SW Version: 2.71B02
+Name        : 210_MEH100001345743
+Location    : Location of the device
+Contact     : Name of the contact person
+MAC Address : 00:20:d2:4b:62:c9
+Sysup Time  : 043:10:58:28
+
+210_MEH100001345743# show configure port pcs 1 status
+Name                  : PCS                                                     
+Administrative Status : Up                                                      
+Operation Status      : Up                                                      
+
+210_MEH100001345743# show configure port pcs 1 statistics
+Running
+-----------------------------------------------------------------------------
+Rx Total Frames : 4593382
+Tx Total Frames : 74037
+Rx Total Errors : 0
+
+210_MEH100001345743# show configure port eth 1 status
+Name                  : ETH-1                                                   
+Administrative Status : Up                                                      
+Operation Status      : Down                                                    
+Connector Type        : RJ45                                                    
+Speed And Duplex      : 10 Half Duplex                                          
+Flow Control          : Disabled                                                
+Loop Detection        : Disabled                                                
+EFM Status            : Disabled                                                
+MAC Address           : 0020D24B62C9                                          
+
+
+210_MEH100001345743# show configure port eth 1 statistics
+Running
+-----------------------------------------------------------------------------
+Counter      Rx                   Tx
+Total Frames 0                    0
+
+Errors
+-----------------------------------------------------------------------------
+FCS Errors : 0
+
+210_MEH100001345743# show configure system event-log
+Date        Time      Description                   State   Port Info           
+-----------------------------------------------------------------------------
+2020-11-29  22:36:15  LINK UP                       Major   1   PCS Port        
+2020-11-29  22:36:15  LINK UP                       Major   1   Line            
+2020-11-29  22:35:23  LINK DOWN                     Major   1   PCS Port        
+2020-11-29  22:35:23  LINK DOWN                     Major   4   Line            
+2020-11-29  22:35:23  LINK DOWN                     Major   3   Line            
+..
+2017-11-27  12:38:43  LINK DOWN                     Major   1   PCS Port        
+2017-11-27  12:38:43  LINK DOWN                     Major   4   Line            
+
+
+ETX203AX_PP1337666# show configure system device-information
+Description    : ETX-203AX Hw: 1.5/D, Sw: 5.9.2(0.12)                                                                                                                                                                                           
+Name           : ETX203AX_PP1337666                                                                                                                                                                                                             
+Location       : The location of this device                                                                                                                                                                                                    
+Contact        : Name of contact person                                                                                                                                                                                                         
+MAC Address    : 00-20-D2-5A-5C-97                                                                                                                                                                                                              
+Engine Time    : 264 days, 02:11:32
+
+ETX203AX_PP1337666# show configure port summary
+Port           Number         Name            Admin    Oper      Speed
+-----------------------------------------------------------------------------
+Ethernet       1              siec            Up       Up        1000000000
+Ethernet       2              ETH 2           Down     Down      1000000000
+Ethernet       3              ETH 3           Up       Up        10000000
+Ethernet       4              ETH-4           Down     Down      1000000000
+Ethernet       5              ETH-5           Down     Down      1000000000
+Ethernet       6              ETH-6           Down     Down      1000000000
+Ethernet       101            MNG-ETH         Up       Down      100000000
+SVI            1              SVI 1           Up       Up        0
+
+ETX203AX_PP1337666# show configure port eth 1 status
+Name siec
+
+Administrative Status : Up
+Operational Status    : Up
+Connector Type        : SFP In
+Auto Negotiation      : Disabled
+Speed And Duplex      : 1000 FX Full Duplex
+MAC Address           : 00-20-D2-5A-5C-97
+
+SFP
+-----------------------------------------------------------------------------
+Connector Type                : LC                                              
+Manufacturer Name             : RAD Data Comm.                                  
+Manufacturer Part Number      : SFP-6DH                                         
+Typical Maximum Range (Meter) : 10000                                           
+Wave Length (nm)              : 1310.00                                         
+Fiber Type                    : SM                                              
+
+RX Power (dBm)              : -5.6 dBm
+TX Power (dBm)              : -6.8 dBm
+Laser Bias (mA)             : 5.5 mA
+Laser Temperature (Celsius) : 54.0 C
+Power Supply (V)            : 3.02 V
+
+ETX203AX_PP1337666# show configure port eth 1 statistics
+Rates Sampling Window
+-----------------------------------------------------------------------------
+Window Size [Min.]        : 15
+Window Remain Time [Min.] : 3
+
+
+Running
+-----------------------------------------------------------------------------
+Counter                    Rx                   Tx
+Total Frames               65887073             73306574
+Total Octets               10082187536          15980702790
+Total Frames/Sec           2                    3
+Total Bits/Sec             3360                 5384
+Minimum Bits/Sec           0                    0
+Maximum Bits/Sec           41760                210792
+Total Bits/Sec (L1)        3818                 5926
+Minimum Bits/Sec (L1)      0                    0
+Maximum Bits/Sec (L1)      45920                214792
+Total Bits/Sec (L2)        3360                 5384
+Minimum Bits/Sec (L2)      0                    0
+Maximum Bits/Sec (L2)      41760                210792
+Unicast Frames             65886086             73306570
+Multicast Frames           0                    0
+Broadcast Frames           1016                 36
+
+CRC Errors                 0
+Error Frames               0
+L2CP Discarded             0
+OAM Discarded              0
+Unknown Protocol Discarded 0
+CRC Errors/Sec             0
+Jabber Errors              0
+Oversize Frames            0                    0                               
+64 Octets                  2456077              25690
+65-127 Octets              34890606             38093939
+128-255 Octets             17349464             11996800
+256-511 Octets             11149300             20436919
+512-1023 Octets            10232                901058
+1024-1518 Octets           6706                 727572
+1519-2047 Octets           24717                1124628
+2048-Max Octets            0                    0
+
+
+SFP
+-----------------------------------------------------------------------------
+                   Minimum    Maximum
+RX Power (dBm)   : -5.6 dBm   -5.5 dBm
+TX Power (dBm)   : -7.4 dBm   -6.3 dBm
+Laser Bias (mA)  : 5.4 mA     6.0 mA
+Laser Temp (Cel) : 51.0 C     59.0 C
+Power Supply (V) : 3.02 V     3.02 V
+
+
+ETX203AX_PP1337666# show configure port eth 3 status
+Name ETH 3
+
+Administrative Status : Up
+Operational Status    : Up
+Connector Type        : RJ45
+Auto Negotiation      : Complete
+Speed And Duplex      : 10 Full Duplex
+MAC Address           : 00-20-D2-B4-A9-DA
+
+
+ETX203AX_PP1337666# show configure port eth 3 statistics
+Rates Sampling Window
+-----------------------------------------------------------------------------
+Window Size [Min.]        : 15
+Window Remain Time [Min.] : 3
+
+
+Running
+-----------------------------------------------------------------------------
+Counter                    Rx                   Tx
+Total Frames               73255643             65836288
+Total Octets               15683574731          9824484958
+Total Frames/Sec           2                    2
+Total Bits/Sec             5048                 3264
+Minimum Bits/Sec           0                    0
+Maximum Bits/Sec           210136               50896
+Total Bits/Sec (L1)        5507                 3667
+Minimum Bits/Sec (L1)      0                    0
+Maximum Bits/Sec (L1)      213176               52816
+Total Bits/Sec (L2)        5048                 3264
+Minimum Bits/Sec (L2)      0                    0
+Maximum Bits/Sec (L2)      210136               50896
+Unicast Frames             73255631             65835275
+Multicast Frames           0                    0
+Broadcast Frames           14                   1014
+
+CRC Errors                 0
+Error Frames               0
+L2CP Discarded             0
+OAM Discarded              0
+Unknown Protocol Discarded 0
+CRC Errors/Sec             0
+Jabber Errors              0
+Oversize Frames            0                    0                               
+64 Octets                  2386579              2462677
+65-127 Octets              35726665             34842645
+128-255 Octets             12016858             20614245
+256-511 Octets             20397555             7875067
+512-1023 Octets            875792               10232
+1024-1518 Octets           1852196              31423
+1519-2047 Octets           0                    0
+2048-Max Octets            0                    0
+
+
+ETX203AX_PP1337666# show configure reporting brief-log
+Last Acknowledge On : --           --
+
+              Critical Major    Minor    Events
+Total     :   0        1        1        11
+Since Ack :   0        1        1        11
+
+
+Source                 Name                             Last Raised  Last Cleared Total Times
+                       Severity                                                   Since Ack
+
+System               ntp_accuracy_out_of_limit        2020-04-23   --           1
+                     Minor                            08:53:33.07  --           1
+System               device_startup                   2020-04-23   --           1
+                     Event                            08:23:18.07  --           1
+System               successful_login                 2021-01-12   --           1
+                     Event                            10:39:59.07  --           1
+System               failed_login                     2021-01-12   --           1
+                     Event                            10:39:54.07  --           1
+System               summer_time_ended                2020-10-25   --           1
+                     Event                            02:00:02.07  --           1
+System               time_changed                     2020-10-25   --           3
+                     Event                            02:00:02.07  --           3
+System               time_source_changed              2020-08-14   --           4
+                     Event                            14:57:45.07  --           4
+Ethernet 3           los                              2020-04-23   2020-04-23   2
+                     Major                            08:25:04.07  08:25:06.09  2
+Ethernet 101         los                              2020-04-23   --           1
+                     Major                            08:23:21.07  --           1
+
+
+
+
+ETX203AX_PP1337666# show configure reporting log
+Last Acknowledge On : --           --
+
+
+1     su login from 10.92.200.201 (telnet)                                                                                                                                                                                                      
+
+2021-01-12   System               successful_login                 Event        
+10:39:59.02                                                        not-applicable
+
+
+2     bolekgr0 failed to logon from 10.92.200.201 (telnet) due to wrong user                                                                                                                                                                    
+
+2021-01-12   System               failed_login                     Event        
+10:39:54.02                                                        not-applicable
+
+
+3     Summer time ended                                                                                                                                                                                                                         
+
+2020-10-25   System               summer_time_ended                Event        
+02:00:02.02                                                        not-applicable
+
+
+4     Local time changed by -3600 seconds                                                                                                                                                                                                       
+
+2020-10-25   System               time_changed                     Event        
+02:00:02.02                                                        not-applicable
+
+
+5     Time source changed to NTP server 10.92.200.1                                                                                                                                                                                             
+
+2020-08-14   System               time_source_changed              Event        
+14:57:45.02                                                        not-applicable
+
+018-10-02   System               device_startup                   Event        
+10:40:50.02                                                        not-applicable
+
+
+293   User reset                                                                                                                                                                                                                                
+
+2018-10-02   System               user_reset                       Event        
+10:40:02.02                                                        not-applicable
+
+
+ETX203AX_PP1337666# show configure reporting alarm-log
+Last Acknowledge On : --           --
+
+
+8     NTP accuracy out of limit for one-way TWAMP measurements                                                                                                                                                                                  
+
+2020-04-23   System               ntp_accuracy_out_of_limit        Minor        
+08:53:33.02                                                        not-applicable
+
+
+9     Loss of signal (LOS)                                                                                                                                                                                                                      
+
+2020-04-23   Ethernet 3           los                              Cleared      
+08:25:06.02                                                        Suppression  
+
+
+10    Loss of signal (LOS)                                                                                                                                                                                                                      
+
+2020-04-23   Ethernet 3           los                              Major        
+08:25:04.02                                                        not-applicable
+
+
+11    Loss of signal (LOS)                                                                                                                                                                                                                      
+
+2020-04-23   Ethernet 3           los                              Cleared      
+08:24:45.02                                                        Suppression  
+
+
+15    Loss of signal (LOS)                                                      
+
+

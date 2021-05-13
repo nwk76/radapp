@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <p class="info_ok">IP address <strong>{{ ip_address }}</strong> is reachable.</p>
+    {% if is_login_ok == False %}
+        <p class="info_not_ok">Telnet failed. Make sure you entered correct username and password.</p>
+    {% endif %}
+    <hr>
+    <br>
+
+    <form action="/login" method="POST">
+        <label>Select connection method:</label>
+        <select class="selector" name="connection_method">
+            <option value="telnet">Telnet</option>
+            <option value="ssh">SSH</option>
+        </select>
+        <p>Enter username and password to log on using telnet:</p>
+        <input type="text" name="username" placeholder="Enter username">
+        <input type="password" name="password" placeholder="Enter password">
+        <input class="button" type="submit" value="OK">
+    </form>
+    <p>Or enter <a href="start">other IP address</a> to connect to.</a></p>
+{% endblock %}
+
+
